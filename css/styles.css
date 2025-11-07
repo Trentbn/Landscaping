@@ -398,7 +398,7 @@ main p {
   color: white;
   padding: 0.8rem;
   margin: 0;
-  border-radius: 0 0 20px 20px;
+  border-radius: 10px 10px 20px 20px;
 }
 .serviceParent section img {
   width: 100%;
@@ -411,6 +411,9 @@ main p {
   left: 0;
   right: 0;
   transform: translateY(2px);
+}
+.serviceParent section img {
+  border-radius: 10px;
 }
 
 .customerParent {

@@ -105,7 +105,7 @@ main {
       color: white;
       padding: .8rem;
       margin: 0;
-      border-radius: 0 0 20px 20px;
+      border-radius: 10px 10px 20px 20px;
     }
 
     img {
@@ -120,6 +120,10 @@ main {
         left: 0;
         right: 0;
         transform: translateY(2px);
+    }
+
+    img {
+      border-radius: 10px;
     }
   }
 }
