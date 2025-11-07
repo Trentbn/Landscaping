@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Evergreen Landscaping</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+    
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo1.png" alt="logo" 
+        srcset="
+        images/logo1.png 1x, 
+        images/logo2.png 2x, 
+        images/logo3.png 3x       
+        " width="50px">
+		<span>Evergreen Landscaping</span>
+        <a href="tel:8011234567">(801) 123-4567</a>
+	</header>
+</div><!-- end header wrapper -->
+
+<div>
+    <button id="hamburgerBtn"></button>
+</div>
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <ul id="theNav">
+            <li><a href="#">Clients</a></li>
+            <li id="active" class="parent"><a href="#">Services</a>
+            <ul >
+                <li><a href="#">Hedge Trimming</a></li>
+                <li><a href="#">Lawn Mowing</a></li>
+                <li><a href="#">Tree Maintanance</a></li>
+                <li><a href="#">Stonework</a></li>
+            </ul>
+            </li>
+            <li ><a href="#">Garden Guides</a></li>
+            <li class="parent"><a href="#">Our Team</a>
+                <ul >
+                    <li><a href="#">Peter</a></li>
+                    <li><a href="#">Paul</a></li>
+                    <li><a href="#">Mary</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/landscape1-small.jpg" media="(max-width: 400px)">
+            <source srcset="images/landscape1-medium.jpg" media="(max-width: 800px)">
+            <img src="images/landscape1-large.jpg" alt="Slider1" width="16" height="9">
+        </picture>
+    </div> <!-- end slide -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/landscape2-small.jpg" media="(max-width: 400px)">
+            <source srcset="images/landscape2-medium.jpg" media="(max-width: 800px)">
+            <img src="images/landscape2-large.jpg" alt="Slider2" width="16" height="9">
+        </picture>
+    </div> <!-- end slide -->
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/landscape3-small.jpg" media="(max-width: 400px)">
+            <source srcset="images/landscape3-medium.jpg" media="(max-width: 800px)">
+            <img src="images/landscape3-large.jpg" alt="Slider3" width="16" height="9">
+        </picture>
+    </div> <!-- end slide -->
+      ...
+    </div>
+        <div id="swiper-text">
+        <h3>Our team are dedicated green thumbs</h3>
+        <p>Try us out with a 100% satisfaction guarantee</p>
+      </div>
+      <!-- If we need pagination -->
+    <div class="swiper-pagination"></div> 
+    </div> 
+
+    <!-- SERVICE SECTION -->
+    <h1>Services</h1>
+    <div class="serviceParent">
+        
+
+        <section>
+            <h3>Hedge Trimming</h3>
+            <img src="images/service2.webP" alt="Hedge trimming" width="400" height="267">
+            <img src="images/grass.svg" alt="grass" width="400">
+        </section>
+
+        <section>
+            <h3>Lawn Mowing</h3>
+            <img src="images/service3.webP" alt="Lawn mowing" width="400" height="267">
+            <img src="images/grass.svg" alt="grass" width="400">
+        </section>
+
+        <section>
+            <h3>Tree Maintanance</h3>
+            <img src="images/service1.webP" alt="tree trimming" width="400" height="267">
+            <img src="images/wave.png" alt="wave" width="400">
+        </section>
+
+        <section>
+            <h3>Stonework</h3>
+            <img src="images/service4.webP" alt="Stonework" width="400" height="267">
+            <img src="images/wave.png" alt="wave" width="400">
+        </section>
+
+    </div>
+
+
+<!-- CUSTOMER SECTION -->
+<h2>Hear From Our Customers</h2>
+
+    <div class="customerParent">
+        <section>
+            <img src="images/customer1.jpg" alt="happy customer">
+            <p>This landscaping company completely transformed our front yard! The team was professional, on time, and really listened to what we wanted. The new walkway and garden beds look amazing, and we've already gotten so many compliments from neighbors. Highly recommend!
+            </p>
+        </section>
+        <section>
+            <img src="images/customer2.jpg" alt="happy customer">
+            <p>I hired this company for a full backyard redesign, and they exceeded my expectations. The attention to detail and quality of work were outstanding. They turned an unused space into a relaxing outdoor area we now use every weekend. Great experience from start to finish!</p>
+        </section>
+    </div>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; Trent Nelson &bull; 2025</p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html> 

@@ -1,0 +1,81 @@
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {
+    display: none;
+}
+
+#theNav {
+    background-color: $primaryColor;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        border-right: 1px solid black;
+    }
+    li a {
+        border: none;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: .85rem;
+        font-weight: $normalWeight;
+        padding: .9rem 1.2rem;
+        transition: background 0.3s linear;
+    }
+
+    li#active a {
+        background-color: #567218;
+    }
+
+    ul li a:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+
+    li a:hover {
+        background-color: rgba(0, 0, 0, .3);
+
+    }
+
+    li.parent > a::before {
+        content: "\25BC";
+        font-size: .65rem;
+    }
+
+    // SUB MENU ITEMS
+    li ul {
+        background-color: $secondaryColor;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        left: -999rem;
+    }
+
+    li:hover ul {
+        left: auto;
+        z-index: 10;
+    }
+}
+
+.customerParent {
+    display: block;
+    section {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        column-gap: 4px;
+        padding: 7px;
+
+        img {
+            width: 100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+
+        }
+    } // end section
+} // end parent
+
+.serviceParent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
